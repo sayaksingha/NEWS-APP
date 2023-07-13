@@ -1,0 +1,21 @@
+import React from "react";
+
+export default function NewsItem({url,urlToImage,description,title}) {
+  
+  return (
+    <div className="mb-4">
+      <div className="card" >
+        <img src={urlToImage} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">
+           {description}...
+          </p>
+          <a href={url} className="btn btn-primary">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
